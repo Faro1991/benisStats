@@ -14,7 +14,7 @@ namespace BenisStatsAvalonia.Models
     public class InfoResponse
     {
         
-        public AccountObject Account {get; set;}
+        public AccountObject Account {get; set;} = new AccountObject();
 
     }
 

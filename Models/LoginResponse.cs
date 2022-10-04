@@ -21,12 +21,12 @@ namespace BenisStatsAvalonia.Models
     public class LoginResponse
     {
 
-        public string Error {get; set;}
+        public string Error {get; set;} = "";
         public bool Success {get; set;}
-        public string Ban {get; set;}
-        public string Identifier {get; set;}
+        public string Ban {get; set;} = "";
+        public string Identifier {get; set;} = "";
         public long Ts {get; set;}
-        public string Cache {get; set;}
+        public string Cache {get; set;} = "";
         public long Rt {get; set;}
         public long Qc {get; set;}
 

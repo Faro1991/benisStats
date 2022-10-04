@@ -21,10 +21,10 @@ namespace BenisStatsAvalonia.Models
         public long Id  {get; set;}
         public long Up {get; set;}
         public long Down {get; set;}
-        public string Content {get; set;}
+        public string Content {get; set;} = "";
         public long Created {get; set;}
         public long ItemId {get; set;}
-        public string Thumb {get; set;}
+        public string Thumb {get; set;} = "";
     }
 
 }

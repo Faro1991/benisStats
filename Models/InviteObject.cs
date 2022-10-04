@@ -17,9 +17,9 @@ namespace BenisStatsAvalonia.Models
     public class InviteObject
     {
 
-        public string Name {get; set;}
+        public string Name {get; set;} = "";
         public long Mark  {get; set;}
-        public string Email {get; set;}
+        public string Email {get; set;} = "";
         public long Created {get; set;}
 
     }
