@@ -22,7 +22,7 @@
   <ItemGroup>
     <PackageReference Include="CsvHelper" Version="15.0.5" />
     <PackageReference Include="Microsoft.Data.Sqlite" Version="3.1.4" />
-    <PackageReference Include="RestSharp" Version="106.10.1" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />
     <PackageReference Include="Avalonia" Version="0.10.18" />
     <PackageReference Include="Avalonia.Desktop" Version="0.10.18" />
     <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
