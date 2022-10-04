@@ -3,8 +3,9 @@
         xmlns:views="clr-namespace:BenisStatsAvalonia.Views"
         x:Class="BenisStatsAvalonia.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
-        Width="250" Height="360"
-        Title="pr0gramm Benis Stats">
+        Width="250" Height="250"
+        Title="pr0gramm Benis Stats"
+        Background="#161618" Foreground="#F2F5F4">
 
     <views:LoginView/>
 
