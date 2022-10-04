@@ -1,0 +1,11 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:BenisStatsAvalonia.Views"
+        x:Class="BenisStatsAvalonia.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Width="250" Height="360"
+        Title="pr0gramm Benis Stats">
+
+    <views:LoginView/>
+
+</Window>

@@ -1,0 +1,18 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="170" d:DesignHeight="200"
+             x:Class="BenisStatsAvalonia.Views.StatsView">
+  <DockPanel>
+    <Button DockPanel.Dock="Bottom"
+            HorizontalAlignment="Center">
+      Update
+    </Button>
+    <StackPanel>
+      <TextBlock x:Name="BenisText" Text="Benis: " />
+      <TextBlock x:Name="ChangedText" Text="geändert am: " />
+      <TextBlock x:Name="ReasonText" Text="geändert durch: " />
+    </StackPanel>
+  </DockPanel>
+</UserControl>

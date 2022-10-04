@@ -1,0 +1,1 @@
+Small pr0ject to display "benis" score stats via pr0gramm API. Updated to Avalonia/.NET 5.0 as of 2022-10-03
