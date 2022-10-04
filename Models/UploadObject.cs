@@ -15,7 +15,7 @@ namespace BenisStatsAvalonia.Models
     {
 
         public long Id {get; set;}
-        public string Thumb {get; set;}
+        public string Thumb {get; set;} = "";
 
     }
 

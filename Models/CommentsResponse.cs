@@ -22,12 +22,12 @@ namespace BenisStatsAvalonia.Models
     public class CommentsResponse
     {
 
-        public CommentObject[] Comments {get; set;}
+        public CommentObject[] Comments {get; set;} = new CommentObject[1];
         public bool HasOlder {get; set;}
         public bool HasNewer {get; set;}
-        public UserObject User {get; set;}
+        public UserObject User {get; set;} = new UserObject();
         public long Ts {get; set;}
-        public string Cache {get; set;}
+        public string Cache {get; set;} = "";
         public long Rt {get; set;}
         public long Qc {get; set;}
 

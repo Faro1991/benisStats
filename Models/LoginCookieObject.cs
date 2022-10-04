@@ -17,10 +17,10 @@ namespace BenisStatsAvalonia.Models
     public class LoginCookieObject
     {
 
-        public string N {get; set;}
-        public string Id {get; set;}
+        public string N {get; set;} = "";
+        public string Id {get; set;} = "";
         public long A {get; set;}
-        public string Pp {get; set;}
+        public string Pp {get; set;} = "";
         public bool Payment {get; set;}
 
     }

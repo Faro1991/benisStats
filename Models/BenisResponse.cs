@@ -15,7 +15,7 @@
 ####        - user favourites => array of upload objects (see uploadObject.cs)                                  ####
 ####        - amount of favourites => long integer                                                              ####
 ####        - amount of tags set by user => long integer                                                        ####
-####        - user bages => array of badge objects (see badgeObject.cs)                                         ####
+####        - user badges => array of badge objects (see badgeObject.cs)                                         ####
 ####        - amount of followed profiles ("stelzen") => long integer                                           ####
 ####        - amount of linked apps(?) => string array until I can find a profile returning a value,            ####
 ####          returned empty array for all accounts checked for testing                                         ####
@@ -34,24 +34,24 @@ namespace BenisStatsAvalonia.Models
     public class UserResponse
     {
 
-        public UserObject User {get; set;}
-        public CommentObject[] Comments {get; set;}
+        public UserObject User {get; set;} = new UserObject();
+        public CommentObject[] Comments {get; set;} = new CommentObject[1];
         public long CommentCount {get; set;}
         public bool LikesArePublic {get; set;}
-        public CommentObject[] Comments_likes {get; set;}
+        public CommentObject[] Comments_likes {get; set;} = new CommentObject[1];
         public long CommentLikesCount {get; set;}
-        public UploadObject[] Uploads {get; set;}
+        public UploadObject[] Uploads {get; set;} = new UploadObject[1];
         public long UploadCount {get; set;}
-        public UploadObject[] Likes {get; set;}
+        public UploadObject[] Likes {get; set;} = new UploadObject[1];
         public long LikeCount {get; set;}
         public long TagCount {get; set;}
-        public BadgeObject[] Badges {get; set;}
+        public BadgeObject[] Badges {get; set;} = new BadgeObject[1];
         public long FollowCount {get; set;}
-        public string[] AppLinks {get; set;}
+        public string[] AppLinks {get; set;} = new string[1];
         public bool Following {get; set;}
         public bool Subscribed {get; set;}
         public long Ts {get; set;}
-        public string Cache {get; set;}
+        public string Cache {get; set;} = "";
         public long Rt {get; set;}
         public long Qc {get; set;}
 

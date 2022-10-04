@@ -1,7 +1,7 @@
 /*
 ####################################################################################################################
 ####                                          class accountObject                                               ####
-####    contains the definition for the accoutn object sent by the pr0gramm API when calling user info after    ####
+####    contains the definition for the account object sent by the pr0gramm API when calling user info after    ####
 ####    login.                                                                                                  ####
 ####    object properties:                                                                                      ####
 ####        - Info on "public likes" setting => bool                                                            ####
@@ -27,14 +27,14 @@ namespace BenisStatsAvalonia.Models
         
         public bool LikesArePublic {get; set;}
         public bool DeviceMail {get; set;}
-        public string Email {get; set;}
+        public string Email {get; set;} = "";
         public long Invites {get; set;}
         public long Mark {get; set;}
         public long MarkDefault {get; set;}
         public long PaidUntil {get; set;}
-        public InviteObject[] Invited {get; set;}
+        public InviteObject[] Invited {get; set;} = new InviteObject[1];
         public long Ts {get; set;}
-        public string Cache {get; set;}
+        public string Cache {get; set;} = "";
         public long Rt {get; set;}
         public long Qc {get; set;}
 

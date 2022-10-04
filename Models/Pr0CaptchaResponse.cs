@@ -17,10 +17,10 @@ namespace BenisStatsAvalonia.Models
 
     public class Pr0Captcha
     {
-        public string Token {get;set;}
-        public string Captcha {get;set;}
+        public string Token {get;set;} = "";
+        public string Captcha {get;set;} = "";
         public long Ts {get; set;}
-        public string Cache {get;set;}
+        public string Cache {get;set;} = "";
         public long Rt {get;set;}
         public long Qc {get;set;}
 

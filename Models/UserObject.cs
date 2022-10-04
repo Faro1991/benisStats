@@ -23,7 +23,7 @@ namespace BenisStatsAvalonia.Models
     {
         
         public long Id {get; set;}
-        public string Name {get; set;}
+        public string Name {get; set;} = "";
         public long Registered {get; set;}
         public long Score {get; set;}
         public long Mark {get; set;}

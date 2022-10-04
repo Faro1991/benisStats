@@ -23,10 +23,10 @@ namespace BenisStatsAvalonia.Models
 
         public bool AtEnd {get; set;}
         public bool AtStart {get; set;}
-        public string Error {get; set;}
-        public UploadDetailObject[] Items {get; set;}
+        public string Error {get; set;} = "";
+        public UploadDetailObject[] Items {get; set;} = new UploadDetailObject[1];
         public long Ts {get; set;}
-        public string Cache {get; set;}
+        public string Cache {get; set;} = "";
         public long Rt {get; set;}
         public long Qc {get; set;}
 

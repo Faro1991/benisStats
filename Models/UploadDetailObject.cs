@@ -11,7 +11,7 @@
 ####        - creation timestamp => long integer                                                                ####
 ####        - image link => string                                                                              ####
 ####        - thumbnail info on upload => string                                                                ####
-####        - link for fullsize image (if too large for standard display) => string                             ####
+####        - link for full size image (if too large for standard display) => string                            ####
 ####        - image width => long integer                                                                       ####
 ####        - image height => long integer                                                                      ####
 ####        - has audio? => bool                                                                                ####
@@ -50,15 +50,15 @@ namespace BenisStatsAvalonia.Models
         public long Up {get; set;}
         public long Down {get; set;}
         public long Created {get; set;}
-        public string Image {get; set;}
-        public string Thumb {get; set;}
-        public string Fullsize {get; set;}
+        public string Image {get; set;} = "";
+        public string Thumb {get; set;} = "";
+        public string Fullsize {get; set;} = "";
         public long Width {get; set;}
         public long Height {get; set;}
         public bool Audio {get; set;}
-        public string Source {get; set;}
+        public string Source {get; set;} = "";
         public long Flags {get; set;}
-        public string User {get; set;}
+        public string User {get; set;} = "";
         public long Mark {get; set;}
         public long Gift {get; set;}
 
