@@ -1,6 +1,8 @@
 using Avalonia.Interactivity;
 using Avalonia.Input;
 using Avalonia.Controls;
+using Avalonia.Markup.Xaml;
+using Avalonia.Controls.Presenters;
 using BenisStatsAvalonia.ViewModels;
 
 namespace BenisStatsAvalonia.Views
@@ -22,19 +24,15 @@ namespace BenisStatsAvalonia.Views
             var source = e.Source as Control;
             switch (source.Name)
             {
-                case "captchaInput":
+                case "CaptchaInput":
                 {
                     var key = (KeyEventArgs) e;
                     if (key.Key == Key.Enter) {
-
-                        this.StartLogin();
-
                     }
                     break;
                 }
-                case "loginButton":
+                case "CloseButton":
                 {
-                    this.StartLogin();
                     break;
                 }
                 default:

@@ -4,34 +4,35 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
              x:Class="BenisStatsAvalonia.Views.LoginView">
-  <UserControl.Styles>
-    <Style Selector="Button">
-      <Setter Property="Background" Value="#EE4D2E"/>
-      <Setter Property="Foreground" Value="#F2F5F4"/>
-    </Style>
-     <Style Selector="Button:PointerEnterEvent">
-      <Setter Property="Background" Value="#EE4D2E"/>
-      <Setter Property="Foreground" Value="#F2F5F4"/>
-    </Style>
-    <Style Selector="TextBlock">
-      <Setter Property="Foreground" Value="#F2F5F4"/>
-    </Style>
-    <Style Selector="TextBox">
-      <Setter Property="Foreground" Value="#F2F5F4"/>
-      <Setter Property="Background" Value="#212121"/>
-      <Setter Property="BorderThickness" Value="0"/>
-      <Setter Property="BorderBrush" Value="#212121"/>
-    </Style>
-  </UserControl.Styles>
 
   <StackPanel>
-    <TextBlock x:Name="usernameLabel" Text="Username:"/>
-    <TextBox x:Name="usernameInput"/>
-    <TextBlock x:Name="passwordLabel" Text="Password:"/>
-    <TextBox x:Name="passwordInput" PasswordChar="*"/>
-    <Image x:Name="captchaContent" Source="{Binding CaptchaContent}"/>
-    <TextBox x:Name="captchaInput"/>
-    <Button x:Name="loginButton" HorizontalAlignment="Stretch">Login!</Button>
-    <Button x:Name="closeButton" HorizontalAlignment="Stretch">Close!</Button>
+    <StackPanel.Styles>
+      <Style Selector="Button">
+        <Setter Property="Background" Value="#EE4D2E"/>
+        <Setter Property="Foreground" Value="#F2F5F4"/>
+      </Style>
+      <Style Selector="Button:pointerover /template/ ContentPresenter#PART_ContentPresenter">
+        <Setter Property="Background" Value="#EE4D2E"/>
+      </Style>
+      <Style Selector="TextBlock">
+        <Setter Property="Foreground" Value="#F2F5F4"/>
+      </Style>
+      <Style Selector="TextBox">
+        <Setter Property="Foreground" Value="#F2F5F4"/>
+        <Setter Property="Background" Value="#212121"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="BorderBrush" Value="#212121"/>
+      </Style>
+    </StackPanel.Styles>
+
+
+    <TextBlock x:Name="UsernameLabel" Text="Username:"/>
+    <TextBox x:Name="UsernameInput"/>
+    <TextBlock x:Name="PasswordLabel" Text="Password:"/>
+    <TextBox x:Name="PasswordInput" PasswordChar="*"/>
+    <Image x:Name="CaptchaContent" Source="{Binding CaptchaContent}"/>
+    <TextBox x:Name="CaptchaInput"/>
+    <Button x:Name="LoginButton" HorizontalAlignment="Stretch" Command="{Binding PerformLogin}">Login!</Button>
+    <Button x:Name="CloseButton" HorizontalAlignment="Stretch">Close!</Button>
   </StackPanel>
 </UserControl>
